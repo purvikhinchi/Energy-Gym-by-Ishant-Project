@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact Energy Gym</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Big+Shoulders+Display:wght@800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head on-bay">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Energy Gym home">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 2 4 13.5h6.5L9.5 22 20 9.5h-6.8z"/></svg>
+      <span>Energy Gym</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>\
+</header>
+
+<main id="main">
+  <section class="page-head on-bay">
+    <div class="wrap">
+      <p class="eyebrow">Contact us</p>
+      <h1>Come and generate</h1>
+      <p class="lead"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap contact">
+      <div class="info">
+        <div>
+          <h2>Email</h2>
+          <p class="email-line">
+            <a id="email" href="mailto:Gymbyishant@gmail.com">Gymbyishant@gmail.com</a>
+            <button type="button" class="btn btn-small" data-copy-target="#email">Copy</button>
+          </p>
+        </div>
+        <div>
+          <h2>Hours</h2>
+          <table class="hours">
+            <caption>All times are India Standard Time.</caption>
+            <tbody>
+              <tr data-days="1,2,3,4,5,6"><th scope="row">Mon to Sat</th><td>5:30 AM to 9:30 PM</td></tr>
+              <tr data-days="0"><th scope="row">Sun</th><td>7:00 AM to 1:00 PM</td></tr>
+            </tbody>
+          </table>
+          <p class="status" data-open-status>Check the hours above.</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.8416729586484!2d74.54967377509838!3d26.493042176899795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396bdd0040ed11fb%3A0x850f84bf0821da05!2sEnergy%20Gym%20by%20Ishant!5e0!3m2!1sen!2sin!4v1792921027880!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+
+      <div class="card form-card">
+        <h2>Send us a message</h2>
+        <p class="hint">Name and email are required.</p>
+        <form id="contact-form" novalidate>
+          <div>
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-err" required>
+            <p class="err" id="name-err" hidden></p>
+          </div>
+          <div>
+            <label for="email-input">Email</label>
+            <input type="email" id="email-input" name="email" autocomplete="email" aria-describedby="email-err" required>
+            <p class="err" id="email-err" hidden></p>
+          </div>
+          <div>
+            <label for="interest">I am interested in</label>
+            <select id="interest" name="interest">
+              <option>Free trial</option>
+              <option>Day pass</option>
+              <option>Monthly membership</option>
+              <option>Team plan</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <div class="actions"><button type="submit" class="btn btn-primary">Send</button></div>
+        </form>
+
+        <div class="result" id="form-result" role="status" hidden>
+          <h3 id=""></h3>
+          <p id="result-text"></p>
+          <textarea id="result-body" readonly rows="7" aria-label="Your message"></textarea>
+          <div class="actions" id="result-actions">
+            <button type="button" class="btn btn-primary" id="copy-msg">Copy message</button>
+            <a class="btn btn-line" id="mailto" href="mailto:Gymbyishant@gmail.com">Open in email app</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot on-bay">
+  <div class="wrap">
+    <p>Energy Gym by Ishant Pvt Ltd</p>
+    <p>Mon to Sat 5:30 AM to 9:30 PM · Sun 7:00 AM to 1:00 PM</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
